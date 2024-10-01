@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canal de Televisión</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <h1>Bienvenidos a ITSE Tv</h1>
+  </header>
+  <nav>
+    <ul>
+      <span><a href="#inicio">Inicio</a></span>
+      <span><a href="#vervivo">Ver en Vivo</a></span>
+      <span><a href="#grilla">Grila</a></span>
+      <span><a href="#contacto">Contacto</a></span>
+      <span><a href="#ubicacion">Ubicación</a></span>
+    </ul>
+  </nav>
+  <main>
+    <section id="inicio">
+      <h2>Inicio</h2>
+      <p>Bienvenidos a nuestro canal de televisión. Aquí encontrarás información sobre nuestros programas y artículos
+        destacados.</p>
+      <audio controls>
+        <source src="p_29735253_667.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+    </section>
+    <section id="vervivo">
+      <h2>Ver en Vivo </h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </section>
+    <section id="grilla">
+      <h2>Grilla Diaria</h2>
+
+      <table>
+        <tr>
+          <th>Programa</th>
+          <th>Categoría</th>
+          <th>Horario</th>
+        </tr>
+        <tr>
+          <td>ITSE News</td>
+          <td>Noticias</td>
+          <td>07:00hrs</td>
+        </tr>
+        <tr>
+          <td>Cocinando con Walter</td>
+          <td>Cocina</td>
+          <td>9:00hrs</td>
+        </tr>
+        <tr>
+          <td>Noticias con Jaqueline</td>
+          <td>Noticias</td>
+          <td>12:00hrs</td>
+        </tr>
+        <tr>
+          <td>Enredados</td>
+          <td>Entretenimiento</td>
+          <td>13:00hrs</td>
+        </tr>
+      </table>
+    </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="submit_form.php" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <section id="ubicacion">
+      <h2>Ubicación</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3530.6894901036744!2d-64.26317122551913!3d-27.757721829037774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b53d8980ffc8b%3A0x22b73749d79f860d!2sITSE%20-%20Instituto%20Tecnol%C3%B3gico%20de%20Santiago%20del%20Estero!5e0!3m2!1ses!2sar!4v1727745292824!5m2!1ses!2sar"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+    </section>
+  </main>
+  <footer>
+    <h3>© 2024 Canal ITSETv</h3>
+    <p>Todos los derechos reservados. Sarmiento Daniel - Agustin Ruiz Cinquegrani</p>
+  </footer>
+</body>
+
+</html>
